@@ -1,0 +1,42 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "foaf:Image" "http://www.w3.org/2000/10/swap/pim/contact#Person" "foaf:Agent" "http://schema.org/Person" "untitled-ontology-3:ChemicalSubstance" "http://schema.org/CreativeWork" "Tecnologias-semanticas:ActiveSubstance" "foaf:Document" "untitled-ontology-3:Vendor" "http://schema.org/ImageObject" "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" "foaf:OnlineAccount" "foaf:Person" "untitled-ontology-3:Protein" "foaf:PersonalProfileDocument" "foaf:OnlineChatAccount" "foaf:Organization" "foaf:OnlineGamingAccount" "foaf:Group" "dcterms:Agent" "foaf:OnlineEcommerceAccount" ; /*classes style*/
+	"dcterms:SizeOrDuration" -> "dcterms:MediaTypeOrExtent" [ label = "rdfs:subClassOf" ];
+	"dcterms:Jurisdiction" -> "dcterms:LocationPeriodOrJurisdiction" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/Person" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/Person" -> "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/Person" -> "dcterms:Agent" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/ImageObject" -> "foaf:Document" [ label = "rdfs:subClassOf" ];
+	"http://schema.org/ImageObject" -> "http://schema.org/CreativeWork" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-3:Vendor" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-3:Vendor" -> "dcterms:Agent" [ label = "rdfs:subClassOf" ];
+	"dcterms:PeriodOfTime" -> "dcterms:LocationPeriodOrJurisdiction" [ label = "rdfs:subClassOf" ];
+	"foaf:OnlineGamingAccount" -> "foaf:OnlineAccount" [ label = "rdfs:subClassOf" ];
+	"Tecnologias-semanticas:ActiveSubstance" -> "untitled-ontology-3:ChemicalSubstance" [ label = "rdfs:subClassOf" ];
+	"foaf:PersonalProfileDocument" -> "foaf:Document" [ label = "rdfs:subClassOf" ];
+	"foaf:PersonalProfileDocument" -> "http://schema.org/CreativeWork" [ label = "rdfs:subClassOf" ];
+	"dcterms:FileFormat" -> "dcterms:MediaType" [ label = "rdfs:subClassOf" ];
+	"foaf:Group" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"foaf:Group" -> "dcterms:Agent" [ label = "rdfs:subClassOf" ];
+	"dcterms:MediaType" -> "dcterms:MediaTypeOrExtent" [ label = "rdfs:subClassOf" ];
+	"foaf:OnlineChatAccount" -> "foaf:OnlineAccount" [ label = "rdfs:subClassOf" ];
+	"foaf:Image" -> "foaf:Document" [ label = "rdfs:subClassOf" ];
+	"foaf:Image" -> "http://schema.org/CreativeWork" [ label = "rdfs:subClassOf" ];
+	"dcterms:LicenseDocument" -> "dcterms:RightsStatement" [ label = "rdfs:subClassOf" ];
+	"foaf:Person" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"foaf:Person" -> "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" [ label = "rdfs:subClassOf" ];
+	"foaf:Person" -> "dcterms:Agent" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-3:Protein" -> "untitled-ontology-3:ChemicalSubstance" [ label = "rdfs:subClassOf" ];
+	"foaf:Organization" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"foaf:Organization" -> "dcterms:Agent" [ label = "rdfs:subClassOf" ];
+	"dcterms:Location" -> "dcterms:LocationPeriodOrJurisdiction" [ label = "rdfs:subClassOf" ];
+	"foaf:OnlineAccount" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"dcterms:PhysicalMedium" -> "dcterms:MediaType" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/2000/10/swap/pim/contact#Person" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/2000/10/swap/pim/contact#Person" -> "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/2000/10/swap/pim/contact#Person" -> "dcterms:Agent" [ label = "rdfs:subClassOf" ];
+	"dcterms:AgentClass" -> "rdfs:Class" [ label = "rdfs:subClassOf" ];
+	"foaf:OnlineEcommerceAccount" -> "foaf:OnlineAccount" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,664 @@
+{
+  "@context" : {
+    "OnlineChatAccount" : {
+      "@id" : "http://xmlns.com/foaf/0.1/OnlineChatAccount"
+    },
+    "spatial" : {
+      "@id" : "http://purl.org/dc/terms/spatial",
+      "@type" : "@id"
+    },
+    "dateAccepted" : {
+      "@id" : "http://purl.org/dc/terms/dateAccepted",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "MediaTypeOrExtent" : {
+      "@id" : "http://purl.org/dc/terms/MediaTypeOrExtent"
+    },
+    "coverage" : {
+      "@id" : "http://purl.org/dc/terms/coverage",
+      "@type" : "@id"
+    },
+    "holdsAccount" : {
+      "@id" : "http://xmlns.com/foaf/0.1/holdsAccount",
+      "@type" : "@id"
+    },
+    "isVersionOf" : {
+      "@id" : "http://purl.org/dc/terms/isVersionOf"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "member" : {
+      "@id" : "http://xmlns.com/foaf/0.1/member",
+      "@type" : "@id"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "TherapeuticSubgroup" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#TherapeuticSubgroup"
+    },
+    "hasVendor" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasVendor",
+      "@type" : "@id"
+    },
+    "accountName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/accountName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "primaryTopic" : {
+      "@id" : "http://xmlns.com/foaf/0.1/primaryTopic",
+      "@type" : "@id"
+    },
+    "RightsStatement" : {
+      "@id" : "http://purl.org/dc/terms/RightsStatement"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "ProvenanceStatement" : {
+      "@id" : "http://purl.org/dc/terms/ProvenanceStatement"
+    },
+    "publications" : {
+      "@id" : "http://xmlns.com/foaf/0.1/publications",
+      "@type" : "@id"
+    },
+    "made" : {
+      "@id" : "http://xmlns.com/foaf/0.1/made",
+      "@type" : "@id"
+    },
+    "accrualPeriodicity" : {
+      "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
+      "@type" : "@id"
+    },
+    "img" : {
+      "@id" : "http://xmlns.com/foaf/0.1/img",
+      "@type" : "@id"
+    },
+    "hasATClevel1" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel1",
+      "@type" : "@id"
+    },
+    "bibliographicCitation" : {
+      "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "MediaType" : {
+      "@id" : "http://purl.org/dc/terms/MediaType"
+    },
+    "Organization" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "myersBriggs" : {
+      "@id" : "http://xmlns.com/foaf/0.1/myersBriggs",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "references" : {
+      "@id" : "http://purl.org/dc/terms/references"
+    },
+    "age" : {
+      "@id" : "http://xmlns.com/foaf/0.1/age",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "isReplacedBy" : {
+      "@id" : "http://purl.org/dc/terms/isReplacedBy"
+    },
+    "AdministrationRoute" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/Tecnologias-semanticas#AdministrationRoute"
+    },
+    "hasID" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasID"
+    },
+    "ActiveSubstance" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/Tecnologias-semanticas#ActiveSubstance"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
+    "Class" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "FileFormat" : {
+      "@id" : "http://purl.org/dc/terms/FileFormat"
+    },
+    "depiction" : {
+      "@id" : "http://xmlns.com/foaf/0.1/depiction",
+      "@type" : "@id"
+    },
+    "VocabularyEncodingScheme" : {
+      "@id" : "http://purl.org/dc/dcam/VocabularyEncodingScheme"
+    },
+    "hasDosageForm" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasDosageForm",
+      "@type" : "@id"
+    },
+    "aimChatID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/aimChatID",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "maker" : {
+      "@id" : "http://xmlns.com/foaf/0.1/maker",
+      "@type" : "@id"
+    },
+    "birthday" : {
+      "@id" : "http://xmlns.com/foaf/0.1/birthday",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasATCcode" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATCcode",
+      "@type" : "@id"
+    },
+    "isPrimaryTopicOf" : {
+      "@id" : "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf"
+    },
+    "schoolHomepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/schoolHomepage",
+      "@type" : "@id"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox",
+      "@type" : "@id"
+    },
+    "hasPart" : {
+      "@id" : "http://purl.org/dc/terms/hasPart"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "isFormatOf" : {
+      "@id" : "http://purl.org/dc/terms/isFormatOf"
+    },
+    "focus" : {
+      "@id" : "http://xmlns.com/foaf/0.1/focus",
+      "@type" : "@id"
+    },
+    "familyName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/familyName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasATClevel3" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel3",
+      "@type" : "@id"
+    },
+    "Location" : {
+      "@id" : "http://purl.org/dc/terms/Location"
+    },
+    "indication" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indication",
+      "@type" : "@id"
+    },
+    "lastName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/lastName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "OnlineGamingAccount" : {
+      "@id" : "http://xmlns.com/foaf/0.1/OnlineGamingAccount"
+    },
+    "LinguisticSystem" : {
+      "@id" : "http://purl.org/dc/terms/LinguisticSystem"
+    },
+    "gender" : {
+      "@id" : "http://xmlns.com/foaf/0.1/gender",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage",
+      "@type" : "@id"
+    },
+    "Disease" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Disease"
+    },
+    "hasATClevel4" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel4",
+      "@type" : "@id"
+    },
+    "yahooChatID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/yahooChatID",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "medium" : {
+      "@id" : "http://purl.org/dc/terms/medium",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://schema.org/Person"
+    },
+    "based_near" : {
+      "@id" : "http://xmlns.com/foaf/0.1/based_near",
+      "@type" : "@id"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "rightsHolder" : {
+      "@id" : "http://purl.org/dc/terms/rightsHolder",
+      "@type" : "@id"
+    },
+    "jabberID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/jabberID",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "mbox_sha1sum" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox_sha1sum",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "thumbnail" : {
+      "@id" : "http://xmlns.com/foaf/0.1/thumbnail",
+      "@type" : "@id"
+    },
+    "tipjar" : {
+      "@id" : "http://xmlns.com/foaf/0.1/tipjar",
+      "@type" : "@id"
+    },
+    "Agent" : {
+      "@id" : "http://purl.org/dc/terms/Agent"
+    },
+    "PharmacologicalSubgroup" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#PharmacologicalSubgroup"
+    },
+    "ImageObject" : {
+      "@id" : "http://schema.org/ImageObject"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "geekcode" : {
+      "@id" : "http://xmlns.com/foaf/0.1/geekcode",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "topic_interest" : {
+      "@id" : "http://xmlns.com/foaf/0.1/topic_interest",
+      "@type" : "@id"
+    },
+    "fundedBy" : {
+      "@id" : "http://xmlns.com/foaf/0.1/fundedBy",
+      "@type" : "@id"
+    },
+    "surname" : {
+      "@id" : "http://xmlns.com/foaf/0.1/surname",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "valid" : {
+      "@id" : "http://purl.org/dc/terms/valid",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "weblog" : {
+      "@id" : "http://xmlns.com/foaf/0.1/weblog",
+      "@type" : "@id"
+    },
+    "CreativeWork" : {
+      "@id" : "http://schema.org/CreativeWork"
+    },
+    "sha1" : {
+      "@id" : "http://xmlns.com/foaf/0.1/sha1"
+    },
+    "dateCopyrighted" : {
+      "@id" : "http://purl.org/dc/terms/dateCopyrighted",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights",
+      "@type" : "@id"
+    },
+    "skypeID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/skypeID",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "nick" : {
+      "@id" : "http://xmlns.com/foaf/0.1/nick"
+    },
+    "status" : {
+      "@id" : "http://xmlns.com/foaf/0.1/status",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "MethodOfAccrual" : {
+      "@id" : "http://purl.org/dc/terms/MethodOfAccrual"
+    },
+    "PhysicalResource" : {
+      "@id" : "http://purl.org/dc/terms/PhysicalResource"
+    },
+    "firstName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/firstName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "currentProject" : {
+      "@id" : "http://xmlns.com/foaf/0.1/currentProject",
+      "@type" : "@id"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "dnaChecksum" : {
+      "@id" : "http://xmlns.com/foaf/0.1/dnaChecksum",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "PhysicalMedium" : {
+      "@id" : "http://purl.org/dc/terms/PhysicalMedium"
+    },
+    "OnlineAccount" : {
+      "@id" : "http://xmlns.com/foaf/0.1/OnlineAccount"
+    },
+    "subject" : {
+      "@id" : "http://purl.org/dc/terms/subject"
+    },
+    "Standard" : {
+      "@id" : "http://purl.org/dc/terms/Standard"
+    },
+    "depicts" : {
+      "@id" : "http://xmlns.com/foaf/0.1/depicts",
+      "@type" : "@id"
+    },
+    "accrualMethod" : {
+      "@id" : "http://purl.org/dc/terms/accrualMethod",
+      "@type" : "@id"
+    },
+    "OnlineEcommerceAccount" : {
+      "@id" : "http://xmlns.com/foaf/0.1/OnlineEcommerceAccount"
+    },
+    "account" : {
+      "@id" : "http://xmlns.com/foaf/0.1/account",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "knows" : {
+      "@id" : "http://xmlns.com/foaf/0.1/knows",
+      "@type" : "@id"
+    },
+    "AnatomicalMainGroup" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#AnatomicalMainGroup"
+    },
+    "Project" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Project"
+    },
+    "Jurisdiction" : {
+      "@id" : "http://purl.org/dc/terms/Jurisdiction"
+    },
+    "interactsWith" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#interactsWith",
+      "@type" : "@id"
+    },
+    "ChemicalSubstance" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubstance"
+    },
+    "tableOfContents" : {
+      "@id" : "http://purl.org/dc/terms/tableOfContents"
+    },
+    "AgentClass" : {
+      "@id" : "http://purl.org/dc/terms/AgentClass"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "dateSubmitted" : {
+      "@id" : "http://purl.org/dc/terms/dateSubmitted",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasATClevel2" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel2",
+      "@type" : "@id"
+    },
+    "isRequiredBy" : {
+      "@id" : "http://purl.org/dc/terms/isRequiredBy"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "type" : {
+      "@id" : "http://purl.org/dc/terms/type",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "pastProject" : {
+      "@id" : "http://xmlns.com/foaf/0.1/pastProject",
+      "@type" : "@id"
+    },
+    "LicenseDocument" : {
+      "@id" : "http://purl.org/dc/terms/LicenseDocument"
+    },
+    "hasAdministrationRoute" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/Tecnologias-semanticas#hasAdministrationRoute",
+      "@type" : "@id"
+    },
+    "BibliographicResource" : {
+      "@id" : "http://purl.org/dc/terms/BibliographicResource"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Frequency" : {
+      "@id" : "http://purl.org/dc/terms/Frequency"
+    },
+    "provenance" : {
+      "@id" : "http://purl.org/dc/terms/provenance",
+      "@type" : "@id"
+    },
+    "interest" : {
+      "@id" : "http://xmlns.com/foaf/0.1/interest",
+      "@type" : "@id"
+    },
+    "isReferencedBy" : {
+      "@id" : "http://purl.org/dc/terms/isReferencedBy"
+    },
+    "ChemicalSubgroup" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ChemicalSubgroup"
+    },
+    "accessRights" : {
+      "@id" : "http://purl.org/dc/terms/accessRights",
+      "@type" : "@id"
+    },
+    "logo" : {
+      "@id" : "http://xmlns.com/foaf/0.1/logo",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/terms/date",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "replaces" : {
+      "@id" : "http://purl.org/dc/terms/replaces"
+    },
+    "plan" : {
+      "@id" : "http://xmlns.com/foaf/0.1/plan",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Policy" : {
+      "@id" : "http://purl.org/dc/terms/Policy"
+    },
+    "accountServiceHomepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/accountServiceHomepage",
+      "@type" : "@id"
+    },
+    "Vendor" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Vendor"
+    },
+    "workInfoHomepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/workInfoHomepage",
+      "@type" : "@id"
+    },
+    "icqChatID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/icqChatID",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "openid" : {
+      "@id" : "http://xmlns.com/foaf/0.1/openid",
+      "@type" : "@id"
+    },
+    "audience" : {
+      "@id" : "http://purl.org/dc/terms/audience",
+      "@type" : "@id"
+    },
+    "SpatialThing" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    },
+    "theme" : {
+      "@id" : "http://xmlns.com/foaf/0.1/theme",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Image" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Image"
+    },
+    "Document" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Document"
+    },
+    "family_name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/family_name",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "language" : {
+      "@id" : "http://purl.org/dc/terms/language",
+      "@type" : "@id"
+    },
+    "page" : {
+      "@id" : "http://xmlns.com/foaf/0.1/page",
+      "@type" : "@id"
+    },
+    "Group" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Group"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor",
+      "@type" : "@id"
+    },
+    "mediator" : {
+      "@id" : "http://purl.org/dc/terms/mediator",
+      "@type" : "@id"
+    },
+    "msnChatID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/msnChatID",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "requires" : {
+      "@id" : "http://purl.org/dc/terms/requires"
+    },
+    "available" : {
+      "@id" : "http://purl.org/dc/terms/available",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "indicatedFor" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#indicatedFor",
+      "@type" : "@id"
+    },
+    "extent" : {
+      "@id" : "http://purl.org/dc/terms/extent",
+      "@type" : "@id"
+    },
+    "conformsTo" : {
+      "@id" : "http://purl.org/dc/terms/conformsTo",
+      "@type" : "@id"
+    },
+    "alternative" : {
+      "@id" : "http://purl.org/dc/terms/alternative",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasFormat" : {
+      "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "DosageForm" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/Tecnologias-semanticas#DosageForm"
+    },
+    "workplaceHomepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/workplaceHomepage",
+      "@type" : "@id"
+    },
+    "sells" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#sells",
+      "@type" : "@id"
+    },
+    "PeriodOfTime" : {
+      "@id" : "http://purl.org/dc/terms/PeriodOfTime"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "SizeOrDuration" : {
+      "@id" : "http://purl.org/dc/terms/SizeOrDuration"
+    },
+    "format" : {
+      "@id" : "http://purl.org/dc/terms/format",
+      "@type" : "@id"
+    },
+    "PersonalProfileDocument" : {
+      "@id" : "http://xmlns.com/foaf/0.1/PersonalProfileDocument"
+    },
+    "MethodOfInstruction" : {
+      "@id" : "http://purl.org/dc/terms/MethodOfInstruction"
+    },
+    "relation" : {
+      "@id" : "http://purl.org/dc/elements/1.1/relation"
+    },
+    "temporal" : {
+      "@id" : "http://purl.org/dc/terms/temporal",
+      "@type" : "@id"
+    },
+    "accrualPolicy" : {
+      "@id" : "http://purl.org/dc/terms/accrualPolicy",
+      "@type" : "@id"
+    },
+    "LocationPeriodOrJurisdiction" : {
+      "@id" : "http://purl.org/dc/terms/LocationPeriodOrJurisdiction"
+    },
+    "ATCcode" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#ATCcode"
+    },
+    "hasATClevel5" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#hasATClevel5",
+      "@type" : "@id"
+    },
+    "Collection" : {
+      "@id" : "http://purl.org/dc/dcmitype/Collection"
+    },
+    "topic" : {
+      "@id" : "http://xmlns.com/foaf/0.1/topic",
+      "@type" : "@id"
+    },
+    "instructionalMethod" : {
+      "@id" : "http://purl.org/dc/terms/instructionalMethod",
+      "@type" : "@id"
+    },
+    "educationLevel" : {
+      "@id" : "http://purl.org/dc/terms/educationLevel",
+      "@type" : "@id"
+    },
+    "Protein" : {
+      "@id" : "http://www.semanticweb.org/diego/ontologies/2019/0/untitled-ontology-3#Protein"
+    }
+  }
+}
